@@ -1,0 +1,20 @@
+---
+  - include_vars: "Debian.yml"
+    when: ansible_distribution == 'Debian'
+
+  - include_vars: "Ubuntu.yml"
+    when: ansible_distribution == 'Ubuntu'
+
+  - name: Install python-pycurl (required for apt_repository)
+    apt: pkg=python-pycurl state=latest
+    sudo: yes
+
+  - name: Add Neurodebian key
+    apt_key: id=2649A5A9 keyserver=pgp.mit.edu
+    sudo: yes
+
+  - name: Add Neurodebian repository
+    apt_repository: repo='{{ item }}' state=present
+    with_items: neurodebian_repos
+    #when: ansible_distribution_release != 'jessie/sid'
+    sudo: yes

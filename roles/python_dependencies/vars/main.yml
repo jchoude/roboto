@@ -1,0 +1,12 @@
+---
+python_packages:
+  - {name: numpy, version: 1.8.1}
+  - {name: scipy, version: 0.13.3}
+  - {name: nibabel, version: 1.3.0}
+  - {name: cython, version: 0.20.1}
+  - {name: ipython, version: 2.0.0}
+  - {name: dipy, version: 0.7.1}
+  - {name: distribute, version: 0.7.3}
+
+python_packages_repo:
+  - https://github.com/MarcCote/tractconverter/archive/master.zip

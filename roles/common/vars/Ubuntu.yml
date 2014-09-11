@@ -1,0 +1,4 @@
+---
+  neurodebian_repos:
+    - "deb http://neurodeb.pirsquared.org data main contrib non-free"
+    - "deb http://neurodeb.pirsquared.org {{ ansible_distribution_release }} main contrib non-free"

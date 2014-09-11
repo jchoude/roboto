@@ -1,0 +1,20 @@
+---
+system_packages:
+  - build-essential
+  - git
+  - gfortran
+  - python-dev
+  - python-pip
+  - python-setuptools
+  - python-virtualenv
+  - liblapack-dev
+  - libatlas-dev
+  - libblas-dev
+  - libminc-dev
+  - minc-tools
+  - libc6-i386
+  - lib32stdc++6
+  - tar
+  - unzip
+  - cmake
+  - screen
