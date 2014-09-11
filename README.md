@@ -7,7 +7,7 @@ Repository to contain the Ansible files that can be used to configure machines i
 Usage
 ------
 
-To configure the packages on a new machine, this system will use a tool called Ansible.
+To configure the packages on a new machine, this system will use a tool called [Ansible](http://www.ansible.com/home).
 
 This system allows the user to configure multiple machines at the same time, from a Control machine. Each configured machine will be called a Slave. In a case where there is only one machine to configure, the Control and Slave machines can be the same computer.
 
