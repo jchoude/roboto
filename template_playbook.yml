@@ -1,0 +1,8 @@
+---
+- hosts: machine
+  roles:
+    - common
+    - dependencies
+    - fsl
+    - ants
+    - python_dependencies
