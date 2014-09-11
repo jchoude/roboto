@@ -15,9 +15,9 @@ This system allows the user to configure multiple machines at the same time, fro
 
 - Install a default Ubuntu (or Ubuntu derived) machine
 - Make sure your user is admin
-    ```
-    groups your_user_name
-    ```
+
+    > groups your_user_name
+    
   should tell you you are in the sudo group
 - Make sure the SSH deamon is running
     `service ssh status`
