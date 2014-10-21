@@ -7,6 +7,8 @@ python_packages:
   - {name: ipython, version: 2.0.0}
   - {name: dipy, version: 0.7.1}
   - {name: distribute, version: 0.7.3}
+  - {name: networkx, version: 1.9}
+  - {name: nipype, version: 0.9.2}
 
 python_packages_repo:
   - https://github.com/MarcCote/tractconverter/archive/master.zip

@@ -1,0 +1,4 @@
+---
+  - name: Install Mrtrix
+    apt: pkg='mrtrix' state=installed update_cache=yes
+    sudo: yes
