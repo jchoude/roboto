@@ -1,0 +1,10 @@
+---
+  - name: Install Tract_querier tornado_server branch
+    pip: name=https://github.com/demianw/tract_querier/archive/tornado_server.zip
+    when: tractquerier_tornado is defined and tractquerier_tornado
+    sudo: yes
+
+  - name: Install Tract_querier master branch
+    pip: name=https://github.com/demianw/tract_querier/archive/master.zip
+    when: tractquerier_tornado is not defined or not tractquerier_tornado
+    sudo: yes

@@ -1,8 +1,12 @@
 ---
 - hosts: machine
+  vars:
+    tractquerier_tornado: true
   roles:
     - common
     - dependencies
+    - python_dependencies
     - fsl
     - ants
-    - python_dependencies
+    - mrtrix
+    - freesurfer
