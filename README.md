@@ -103,7 +103,7 @@ This is to be done on the **Control machine**
 
 - Get Ansible’s code
     
-    > git clone git://github.com/ansible/ansible.git
+    > git clone git://github.com/ansible/ansible.git --recursive
 
 - When you are ready to use Ansible to configure and install tools
     
