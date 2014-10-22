@@ -1,0 +1,12 @@
+---
+  - name: Fetch Freesurfer to temp dir
+    get_url: >
+            url=ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/5.3.0/freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0.tar.gz
+            dest=/tmp/
+
+  - name: Uncompress Freesurfer archive
+    unarchive: src=/tmp/freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0.tar.gz dest=/usr/local/ copy=no
+    sudo: yes
+
+  - name: Print license info
+    debug: msg="You will need to acquire a free Freesurfer licence at https://surfer.nmr.mgh.harvard.edu/registration.html and copy it to /usr/local/freesurfer/.license"
