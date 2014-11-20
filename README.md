@@ -114,17 +114,17 @@ This is to be done on the **Control machine**
 
 
 **Tools configuration and installation**
-
-- You will need to create a "host file" that will specify which machine to configure. You can call it my_host. It must contain something similar to
+Once all the pre-requisites are configured, you can clone this repository. Use the clone link on the right side of the page.
+- After cloning, you will need to create a "host file" that will specify which machine to configure. You can call it my_host. It must contain something similar to
     
     > [machine]
-    
+
     > machine_ip_address
 
   where `machine_ip_address` is the IP address of the machine to configure. If the **Control** and **Slave** machines are the same, you can put 127.0.0.1 as the IP.
-- You can then create a file based on `template_playbook.yml`. In this file, you must specify the hosts group to apply this playbook to (if you created the file `my_host` as suggested, it will be called `machine`) and the `roles` to apply. Each role correspond to a directory in this repository. So, if you need to install FSL, you can add the `fsl` role.
+- To specify what you want to install, you will create a file based on `template_playbook.yml`, which is included in this repository. In this file, you must specify the hosts group to apply this playbook to (if you created the file `my_host` as suggested, it will be called `machine`) and the `roles` to apply. Each role is one `task`, or one element to install. They each correspond to a directory in this repository. You can therefore see everything that can be installed by having a look at the directories. For example, if you need to install FSL, you can add the `fsl` role to your `playbook` file.
 - Always make sure the `common` and `dependencies` roles are included in the file.
-- To do the real setup, you need to do the Ansible setyp step (see last step of previous section), and then call
+- To do the real setup, you need to do the Ansible setup step (see last step of previous section), and then call
     
     > ansible-playbook -i my_host -u your_user_name -K name_of_playbook_file.yml
     
