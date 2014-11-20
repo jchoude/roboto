@@ -82,7 +82,7 @@ This is to be done on the **Control machine**
 
   If this doesn’t work, install it
     
-    > sudo apt-get install python-pip
+    > sudo apt-get install python-pip python-dev libyaml-dev
 
 - Make sure it is updated
     
@@ -90,7 +90,7 @@ This is to be done on the **Control machine**
 
 - Install the dependencies:
     
-    > sudo pip install paramiko PyYAML jinja2 httplib2
+    > sudo pip install cython paramiko PyYAML jinja2 httplib2
 
 - Go to a directory where you want to copy source code (for example ~/src)
 - Make sure Git is installed
