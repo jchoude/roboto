@@ -114,6 +114,7 @@ This is to be done on the **Control machine**
 
 
 **Tools configuration and installation**
+
 Once all the pre-requisites are configured, you can clone this repository. Use the clone link on the right side of the page.
 - After cloning, you will need to create a "host file" that will specify which machine to configure. You can call it my_host. It must contain something similar to
     
