@@ -108,6 +108,7 @@ This is to be done on the **Control machine**
 - When you are ready to use Ansible to configure and install tools
     
     > cd ansible
+    
     > source ./hacking/env-setup
 
 
