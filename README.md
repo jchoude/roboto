@@ -75,6 +75,7 @@ This system allows the user to configure multiple machines at the same time, fro
     If you get connected, everything is good.
 
 **Ansible setup and configuration**
+
 This is to be done on the **Control machine**
 
 - Make sure pip is installed
