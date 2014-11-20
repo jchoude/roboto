@@ -54,6 +54,7 @@ This system allows the user to configure multiple machines at the same time, fro
     If you don’t have the .ssh directory, or if you don’t have something called id_rsa.pub in that directory, you need to generate it. To do so:
       
       > cd ~
+
       > ssh-keygen
 
     then press Enter 3 times. Your key pair is now generated.
@@ -108,7 +109,7 @@ This is to be done on the **Control machine**
 - When you are ready to use Ansible to configure and install tools
     
     > cd ansible
-    
+
     > source ./hacking/env-setup
 
 
@@ -117,6 +118,7 @@ This is to be done on the **Control machine**
 - You will need to create a "host file" that will specify which machine to configure. You can call it my_host. It must contain something similar to
     
     > [machine]
+    
     > machine_ip_address
 
   where `machine_ip_address` is the IP address of the machine to configure. If the **Control** and **Slave** machines are the same, you can put 127.0.0.1 as the IP.
