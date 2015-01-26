@@ -1,0 +1,12 @@
+---
+  - name: Fetch Sublime text package
+    get_url: >
+            url=http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3065_amd64.deb
+            dest=/tmp/
+
+  - name: Install Freesurfer from deb package
+    apt: deb=/tmp/sublime-text_build-3065_amd64.deb
+    sudo: yes
+
+  - name: Delete temporary file
+    command: rm /tmp/sublime-text_build-3065_amd64.deb
