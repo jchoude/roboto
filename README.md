@@ -94,25 +94,9 @@ This is to be done on the **Control machine**
     
     > sudo pip install cython paramiko PyYAML jinja2 httplib2
 
-- Go to a directory where you want to copy source code (for example ~/src)
-- Make sure Git is installed
-    
-    > git
+- Install Ansible:
 
-  If not installed, do
-    
-    > sudo apt-get install git
-
-- Get Ansible’s code
-    
-    > git clone git://github.com/ansible/ansible.git --recursive
-
-- When you are ready to use Ansible to configure and install tools
-    
-    > cd ansible
-
-    > source ./hacking/env-setup
-
+    > [sudo] pip install ansible
 
 **Tools configuration and installation**
 
