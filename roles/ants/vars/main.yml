@@ -1,0 +1,6 @@
+---
+dest_dir: "/opt"
+
+ants_version: "2.1.0"
+ants_archive: "Linux_Ubuntu14.04.tar.bz2"
+ants_url: "https://github.com/stnava/ANTs/releases/download/v{{ ants_version }}/{{ ants_archive }}"

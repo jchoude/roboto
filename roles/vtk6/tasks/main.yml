@@ -1,0 +1,5 @@
+---
+  - name: Install VTK6
+    apt: pkg='libvtk6' state=installed update_cache=yes
+    with_items: system_packages
+    become: yes

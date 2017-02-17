@@ -1,0 +1,19 @@
+TODO tasks for PATH customization:
+
+mrtrix: export PATH=$PATH:/usr/lib/mrtrix/bin 
+ants: 
+export ANTSPATH='/opt/ANTs.2.1.0.Debian-Ubuntu_X64'
+export PATH=$PATH:$ANTSPATH
+
+install dep glibmm-2.4
+
+# Uninstall basic setup from lab (ml_python, etc)
+
+vtk 6: 
+sudo apt-get install libvtk6 libvtk6-dev
+
+sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7
+sudo apt-get update
+sudo apt-get upgrade
+
+# Put Mrtrix and Ants paths in /etc/profile.d

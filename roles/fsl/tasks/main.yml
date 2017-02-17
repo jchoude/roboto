@@ -1,4 +1,4 @@
 ---
   - name: Install FSL tools
     apt: pkg=fsl state=installed update_cache=yes
-    sudo: yes
+    become: true
