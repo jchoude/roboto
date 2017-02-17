@@ -1,4 +1,17 @@
 ---
-  - name: Install ANTS package
-    apt: pkg='ants' state=installed update_cache=yes
-    sudo: yes
+  - name: Download ANTs v{{ ants_version }}
+    get_url: url="{{ ants_url }}"
+             dest="{{ dest_dir }}/{{ ants_archive }}"
+             mode=775
+    become: true
+
+  - name: Extract ANTs v{{ ants_version }}
+    unarchive: src="{{ dest_dir }}/{{ ants_archive }}"
+               dest="{{ dest_dir }}/"
+               copy=no
+    become: true
+
+  - name: Remove ANTs v{{ ants_version }} archive
+    file: path="{{ dest_dir }}/{{ ants_archive }}"
+          state=absent
+    become: true

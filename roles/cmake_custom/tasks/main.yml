@@ -1,0 +1,8 @@
+---
+  - name: Add Cmake 3.2 repository
+    apt_repository: repo='ppa:george-edison55/cmake-3.x' state=present update_cache=yes
+    become: true
+
+  - name: Install updated cmake
+    apt: pkg=cmake state=latest
+    become: true
